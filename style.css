@@ -1,0 +1,293 @@
+* {
+    margin : 0;
+    padding: 0;
+
+}
+
+body {
+    background-color: aliceblue;
+
+}
+
+nav {
+    max-height : 20vh;
+    margin-top : .5em;
+    margin-left: 1em;
+}
+
+nav,
+img {
+    height: 60px;
+}
+
+.comingsoon-message-wrap {
+    display        : flex;
+    flex-direction : column;
+    align-items    : center;
+    justify-content: center;
+    height         : 50vh;
+}
+
+#comingsoon-message-jp,
+.ig-wrap,
+.ig-wrap a,
+.balloon-bycar,
+.address,
+.minstotake-wrap div {
+    font-family: "Kosugi Maru", sans-serif;
+    font-weight: 400;
+    font-style : normal;
+}
+
+#comingsoon-message-jp {
+    font-size: 3em;
+}
+
+#comingsoon-message-en {
+    font-family: "filicudi-solid", sans-serif;
+    font-weight: 400;
+    font-style : normal;
+    font-size  : 3em;
+}
+
+.browndog {
+    position: absolute;
+    height  : 100px;
+    right   : 80px;
+    top     : 10vh;
+
+}
+
+.blackdog {
+    position: absolute;
+    height  : 100px;
+    left    : 90px;
+    top     : 40vh;
+}
+
+.ig-wrap {
+    display       : flex;
+    flex-direction: column;
+    align-items   : center;
+    min-height    : 10vh;
+}
+
+.ig-btn {
+    margin-top: 1em;
+    position  : relative;
+    display   : inline-block;
+
+    color          : #FFF;
+    /*文字・アイコン色*/
+    border-radius  : 7px;
+    /*角丸に*/
+    height         : 40px;
+    /*高さ*/
+    width          : 200px;
+    /*幅*/
+    text-align     : center;
+    /*中身を中央寄せ*/
+    line-height    : 40px;
+    /*高さと合わせる*/
+    background     : -webkit-linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
+    background     : linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
+    /*グラデーション①*/
+    overflow       : hidden;
+    /*はみ出た部分を隠す*/
+    text-decoration: none;
+    /*下線は消す*/
+}
+
+.ig-btn:before {
+    /*グラデーション②*/
+    content   : '';
+    position  : absolute;
+    top       : 0;
+    left      : 0;
+    width     : 100%;
+    /*全体を覆う*/
+    height    : 100%;
+    /*全体を覆う*/
+    background: -webkit-linear-gradient(15deg, #ffdb2c, rgb(249, 118, 76) 25%, rgba(255, 77, 64, 0) 50%) no-repeat;
+    background: linear-gradient(15deg, #ffdb2c, rgb(249, 118, 76) 25%, rgba(255, 77, 64, 0) 50%) no-repeat;
+}
+
+
+.ig-btn:hover span {
+    display: none
+}
+
+.ig-btn:hover::after {
+    content: "チェックする！";
+}
+
+.ig-btn img {
+    height      : 30px;
+    margin-right: 1em;
+    position    : relative;
+    top         : 5px;
+
+}
+
+.ig-btn span {
+    display : inline-block;
+    position: relative;
+    top     : -4px;
+}
+
+.balloon-bycar {
+    position     : relative;
+    display      : inline-block;
+    margin       : 1.5em 15px 1.5em 20px;
+    padding      : 0 5px;
+    width        : 70px;
+    height       : 70px;
+    line-height  : 70px;
+    text-align   : center;
+    color        : #FFF;
+    font-weight  : bold;
+    background   : #D7B412;
+    border-radius: 50%;
+    box-sizing   : border-box;
+    font-size    : .9em;
+}
+
+.balloon-bycar:before {
+    content          : "";
+    position         : absolute;
+    bottom           : -8px;
+    left             : -8px;
+    margin-top       : -15px;
+    border           : 15px solid transparent;
+    border-left      : 15px solid #D7B412;
+    z-index          : 0;
+    -webkit-transform: rotate(135deg);
+    transform        : rotate(135deg);
+}
+
+.pin-address-wrap {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    font-size      : 1.2em;
+}
+
+.pin-address-wrap img {
+    height: 40px;
+}
+
+.minstotake-wrap {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+}
+
+.minstotake-wrap p {
+    margin-top: .7em;
+}
+
+iframe {
+    margin : 0 auto 5% auto;
+    display: flex;
+}
+
+
+@media (max-width:480px) {
+    nav {
+        max-height: 15vh;
+    }
+
+    nav,
+    img {
+        height: 40px;
+    }
+
+    iframe {
+        width: 80%;
+    }
+}
+
+@media (min-width:600px) {
+    /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+}
+
+@media (min-width:801px) {
+    /* tablet, landscape iPad, lo-res laptops ands desktops */
+}
+
+@media (max-height:1025px) {
+    .comingsoon-message-wrap {
+        height: 70vh;
+    }
+
+    .blackdog {
+        top: 50vh;
+    }
+
+    .pin-address-wrap {
+        margin: 1em 0;
+    }
+}
+
+@media (max-width:350px) {
+    #comingsoon-message-en {
+        font-size: 2.5em;
+    }
+
+    .browndog {
+        position: absolute;
+        height  : 60px;
+        right   : 50px;
+        top     : 10vh;
+
+    }
+
+    .blackdog {
+        position: absolute;
+        height  : 60px;
+        left    : 50px;
+        top     : 60vh;
+    }
+
+    .pin-address-wrap {
+        font-size: 1em;
+    }
+
+    .minstotake-wrap p {
+        font-size: .8em;
+    }
+
+    .pin-address-wrap img {
+        height: 30px;
+    }
+}
+
+@media (max-width:290px) {
+    #comingsoon-message-en {
+        font-size: 2em;
+    }
+
+    .pin-address-wrap {
+        font-size: .8em;
+    }
+
+    .minstotake-wrap p {
+        font-size: .7em;
+    }
+
+    .ig-wrap p {
+        font-size: .9em;
+    }
+
+    .balloon-bycar {
+        width      : 60px;
+        height     : 60px;
+        line-height: 60px;
+        font-size  : .7em;
+    }
+
+    .balloon-bycar:before {
+        bottom: -10px;
+        left  : -10px;
+    }
+}
