@@ -1,0 +1,98 @@
+* {
+    margin : 0;
+    padding: 0;
+}
+
+nav {
+    background-color: aqua;
+    max-height      : 20vh;
+}
+
+nav,
+img {
+    height: 60px;
+}
+
+.comingsoon-message-wrap {
+    background-color: antiquewhite;
+    text-align      : center;
+
+}
+
+#comingsoon-message-jp,
+.ig-wrap,
+.ig-wrap a {
+    font-family: "Kosugi Maru", sans-serif;
+    font-weight: 400;
+    font-style : normal;
+}
+
+#comingsoon-message-jp {
+    font-size: 3em;
+}
+
+#comingsoon-message-en {
+    font-family: "filicudi-solid", sans-serif;
+    font-weight: 400;
+    font-style : normal;
+    font-size  : 3em;
+}
+
+
+.ig-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ig-btn {
+    position: relative;
+    display : inline-block;
+
+    color          : #FFF;
+    /*文字・アイコン色*/
+    border-radius  : 7px;
+    /*角丸に*/
+    height         : 40px;
+    /*高さ*/
+    width          : 180px;
+    /*幅*/
+    text-align     : center;
+    /*中身を中央寄せ*/
+    line-height    : 40px;
+    /*高さと合わせる*/
+    background     : -webkit-linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
+    background     : linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
+    /*グラデーション①*/
+    overflow       : hidden;
+    /*はみ出た部分を隠す*/
+    text-decoration: none;
+    /*下線は消す*/
+}
+
+.ig-btn:before {
+    /*グラデーション②*/
+    content   : '';
+    position  : absolute;
+    top       : 0;
+    left      : 0;
+    width     : 100%;
+    /*全体を覆う*/
+    height    : 100%;
+    /*全体を覆う*/
+    background: -webkit-linear-gradient(15deg, #ffdb2c, rgb(249, 118, 76) 25%, rgba(255, 77, 64, 0) 50%) no-repeat;
+    background: linear-gradient(15deg, #ffdb2c, rgb(249, 118, 76) 25%, rgba(255, 77, 64, 0) 50%) no-repeat;
+}
+
+.ig-btn img {
+    height          : 30px;
+    margin-right    : 1em;
+    position        : relative;
+    top             : 5px;
+    
+}
+.ig-btn span {
+    display:inline-block;
+    position: relative;
+    top: -4px;
+}
