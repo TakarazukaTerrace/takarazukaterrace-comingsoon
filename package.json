@@ -1,0 +1,23 @@
+{
+  "name": "takarazukateracce-comingsoon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TakarazukaTerrace/takarazukaterrace-comingsoon.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TakarazukaTerrace/takarazukaterrace-comingsoon/issues"
+  },
+  "homepage": "https://github.com/TakarazukaTerrace/takarazukaterrace-comingsoon#readme",
+  "dependencies": {
+    "gh-pages": "^6.1.1"
+  }
+}
